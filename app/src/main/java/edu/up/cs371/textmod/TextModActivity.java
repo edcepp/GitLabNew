@@ -19,8 +19,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import java.util.ArrayList;
+import android.widget.TextView;
+import android.widget.Button;
 
 public class TextModActivity extends ActionBarActivity {
+
+    private TextView editText;
+    private Button clearButton;
 
     // array-list that contains our images to display
     private ArrayList<Bitmap> images;
@@ -73,6 +78,9 @@ public class TextModActivity extends ActionBarActivity {
         // define a listener for the spinner
         spinner.setOnItemSelectedListener(new MySpinnerListener());
 
+        editText = (TextView)findViewById(R.id.editText);
+        clearButton  = (Button)findViewById(R.id.clear_button);
+        clearButton.setOnClickListener(new ClearButtonListener());
     }
 
     /**
@@ -126,6 +134,13 @@ public class TextModActivity extends ActionBarActivity {
         @Override
         public void onNothingSelected(AdapterView<?> parentView) {
             // your code here
+        }
+    }
+
+       private class ClearButtonListener implements View.OnClickListener{
+        public void onClick(View v)
+        {
+           editText.setText(" ");
         }
     }
 }
