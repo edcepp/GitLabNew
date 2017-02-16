@@ -79,8 +79,8 @@ public class TextModActivity extends ActionBarActivity {
         spinner.setOnItemSelectedListener(new MySpinnerListener());
 
         editText = (TextView) findViewById(R.id.editText);
-        Button clearButton = (Button) findViewById(R.id.clear_button);
-        clearButton.setOnClickListener(new ClearButtonListener());
+        Button clearButton = (Button) findViewById(R.id.demo3_button);
+        clearButton.setOnClickListener(new Demo3ButtonListener());
         Button upperButton = (Button) findViewById(R.id.upper_button);
         upperButton.setOnClickListener(new UpperButtonListener());
         Button lowerButton = (Button) findViewById(R.id.lower_button);
@@ -149,9 +149,9 @@ public class TextModActivity extends ActionBarActivity {
         }
     }
 
-    private class ClearButtonListener implements View.OnClickListener {
+    private class Demo3ButtonListener implements View.OnClickListener {
         public void onClick(View v) {
-            editText.setText("");
+            editText.setText("Demo 3");
         }
     }
 

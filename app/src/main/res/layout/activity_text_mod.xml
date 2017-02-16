@@ -65,8 +65,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clear"
-            android:id="@+id/clear_button"
+            android:text="Demo3"
+            android:id="@+id/demo3_button"
             android:textSize="20sp"
             android:textColor="@color/button_text_color"
             android:background="@color/button_color" />
