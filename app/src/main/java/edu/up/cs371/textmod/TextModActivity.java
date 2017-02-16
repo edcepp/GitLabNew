@@ -79,8 +79,8 @@ public class TextModActivity extends ActionBarActivity {
         spinner.setOnItemSelectedListener(new MySpinnerListener());
 
         editText = (TextView) findViewById(R.id.editText);
-        Button demo2Button = (Button) findViewById(R.id.demo2_button);
-        demo2Button.setOnClickListener(new Demo2ButtonListener());
+        Button demo2againButton = (Button) findViewById(R.id.demo2_button);
+        demo2againButton.setOnClickListener(new Demo2ButtonListener());
         Button upperButton = (Button) findViewById(R.id.upper_button);
         upperButton.setOnClickListener(new UpperButtonListener());
         Button lowerButton = (Button) findViewById(R.id.lower_button);
@@ -151,7 +151,7 @@ public class TextModActivity extends ActionBarActivity {
 
     private class Demo2ButtonListener implements View.OnClickListener {
         public void onClick(View v) {
-            editText.setText("Demo 2");
+            editText.setText("Demo 2 Again");
         }
     }
 
