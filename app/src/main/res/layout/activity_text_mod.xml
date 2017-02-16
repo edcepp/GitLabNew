@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:text="@string/clear_button_text"
             android:id="@+id/clear_button"
-            android:textSize="@dimen/button_font_size"
+            android:textSize="20sp"
             android:textColor="@color/button_text_color"
             android:background="@color/button_color" />
 
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:text="@string/upper_button_text"
             android:id="@+id/upper_button"
-            android:textSize="@dimen/button_font_size"
+            android:textSize="20sp"
             android:textColor="@color/button_text_color"
             android:background="@color/button_color" />
 
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:text="@string/lower_button_text"
             android:id="@+id/lower_button"
-            android:textSize="@dimen/button_font_size"
+            android:textSize="20sp"
             android:textColor="@color/button_text_color"
             android:background="@color/button_color" />
 
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:text="@string/reverse_button_text"
             android:id="@+id/reverse_button"
-            android:textSize="@dimen/button_font_size"
+            android:textSize="20sp"
             android:textColor="@color/button_text_color"
             android:background="@color/button_color" />
 
@@ -123,7 +123,21 @@
             android:layout_height="wrap_content"
             android:text="@string/copy_name_button_text"
             android:id="@+id/copy_button"
-            android:textSize="@dimen/button_font_size"
+            android:textSize="20sp"
+            android:textColor="@color/button_text_color"
+            android:background="@color/button_color" />
+
+        <Space
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"  />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Spaces"
+            android:id="@+id/nospace_button"
+            android:textSize="20sp"
             android:textColor="@color/button_text_color"
             android:background="@color/button_color" />
 

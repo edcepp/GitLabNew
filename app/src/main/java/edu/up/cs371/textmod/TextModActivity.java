@@ -89,6 +89,8 @@ public class TextModActivity extends ActionBarActivity {
         reverseButton.setOnClickListener(new ReverseButtonListener());
         Button copyButton = (Button) findViewById(R.id.copy_button);
         copyButton.setOnClickListener(new CopyButtonListener());
+        Button noSpaceButton = (Button) findViewById(R.id.nospace_button);
+        noSpaceButton.setOnClickListener(new NoSpaceButtonListener());
         mySpinnerPosition = 0;
     }
 
@@ -181,5 +183,9 @@ public class TextModActivity extends ActionBarActivity {
             editText.setText(editText.getText().toString() + spinnerNames[mySpinnerPosition]);
         }
     }
-
+    private class NoSpaceButtonListener implements View.OnClickListener {
+        public void onClick(View v) {
+            editText.setText(editText.getText().toString().replace(" ", ""));
+        }
+    }
 }
