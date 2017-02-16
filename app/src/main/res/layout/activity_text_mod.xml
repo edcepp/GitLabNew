@@ -65,8 +65,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sour Grapes"
-            android:id="@+id/grapes_button"
+            android:text="Demo 2"
+            android:id="@+id/demo2_button"
             android:textSize="20sp"
             android:textColor="@color/button_text_color"
             android:background="@color/button_color" />
